@@ -42,18 +42,18 @@ public class FirelineParallel {
                 landscape = FireMap.Landscape.fromString(args[7]);
             }
 
-           //  Integer ignitionTopRow = null;
-//             Integer ignitionLeftColumn = null;
-//             Integer ignitionPatchSize = null;
-// 
-//             if (args.length == 11) {
-// 
-//                 ignitionTopRow = Integer.parseInt(args[8]);
-// 
-//                 ignitionLeftColumn = Integer.parseInt(args[9]);
-// 
-//                 ignitionPatchSize = Integer.parseInt(args[10]);
-//             }
+            Integer ignitionTopRow = null;
+            Integer ignitionLeftColumn = null;
+            Integer ignitionPatchSize = null;
+
+            if (args.length == 11) {
+
+                ignitionTopRow = Integer.parseInt(args[8]);
+
+                ignitionLeftColumn = Integer.parseInt(args[9]);
+
+                ignitionPatchSize = Integer.parseInt(args[10]);
+            }
 
             FireMap map = new FireMap( rows, columns, seed, mode, landscape, ignitionTopRow,ignitionLeftColumn,ignitionPatchSize);
 
