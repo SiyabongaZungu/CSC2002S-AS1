@@ -102,7 +102,7 @@ public class FirelineParallel {
   
             System.out.println("Fireline serial simulation");
             System.out.printf("Mode: %s%n", mode.name().toLowerCase());
-            System.out.printf("1000");
+            // System.out.printf("1000");
             System.out.printf("Rows: %d%n", rows);
             System.out.printf("Columns: %d%n", columns);
             System.out.printf("Random seed: %d%n", seed);
