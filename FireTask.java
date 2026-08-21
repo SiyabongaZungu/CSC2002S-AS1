@@ -18,6 +18,8 @@ public class FireTask extends RecursiveTask<FireMap.StepResult> {
         this.colStart = columnStart;
         this.colEnd = columnEnd;
         this.CUTOFF = cutoff;
+        this.rowStart = rowStart;
+        this.rowEnd = rowEnd;
     }
 
     @Override
