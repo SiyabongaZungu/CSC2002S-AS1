@@ -57,7 +57,7 @@ public class FirelineParallel {
 
             FireMap map = new FireMap( rows, columns, seed, mode, landscape, ignitionTopRow,ignitionLeftColumn,ignitionPatchSize);
 
-            ForkJoinPool pool = new ForkJoinPool();
+            ForkJoinPool pool = new ForkJoinPool(4);
 
             FireMap.StepResult result = null;
 
