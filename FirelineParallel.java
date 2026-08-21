@@ -5,7 +5,7 @@ public class FirelineParallel {
     private static final int DEFAULT_MAXIMUM_STEPS = 5000;
     private static final double DEFAULT_TOLERANCE = 0.05;
 
-    private static final int CUTOFF = 10000;
+    private static final int CUTOFF = 1000;
 
     public static void main(String[] args) {
 
@@ -57,7 +57,7 @@ public class FirelineParallel {
 
             FireMap map = new FireMap( rows, columns, seed, mode, landscape, ignitionTopRow,ignitionLeftColumn,ignitionPatchSize);
 
-            ForkJoinPool pool = new ForkJoinPool(4);
+            ForkJoinPool pool = new ForkJoinPool(Runtime.getRuntime().availableProcessors());
 
             FireMap.StepResult result = null;
 
