@@ -140,5 +140,12 @@ public class FirelineParallel {
     private static void printUsage() {
 
         System.err.println("Usage: java FirelineParallel <rows> <columns> "+ "<seed> <diffusion|wildfire> <output-prefix> " + "[max-steps] [tolerance] [mixed|grass] " + "[ignition-top-row ignition-left-column patch-size]");
+        System.err.println("Examples:");
+        System.err.println(
+                "  java FirelineSerial 300 300 42 wildfire "
+                + "output/fireline");
+        System.err.println(
+                "  java FirelineSerial 2000 2000 17 wildfire "
+                + "output/benchmark 50000 0.05 grass 20 20 9");
     }
 }
