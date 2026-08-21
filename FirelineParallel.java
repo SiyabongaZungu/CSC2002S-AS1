@@ -5,7 +5,7 @@ public class FirelineParallel {
     private static final int DEFAULT_MAXIMUM_STEPS = 5000;
     private static final double DEFAULT_TOLERANCE = 0.05;
 
-    private static final int CUTOFF = 1000;
+    private static final int CUTOFF = 10000;
 
     public static void main(String[] args) {
 
