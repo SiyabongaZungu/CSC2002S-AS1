@@ -15,9 +15,9 @@ public class FireTask extends RecursiveTask<FireMap.StepResult> {
     public FireTask(FireMap map, FireMap.Mode mode, int rowStart, int rowEnd, int columnStart, int columnEnd, int cutoff) {
         this.map = map;
         this.mode = mode;
-        columnStart = colStart;
-        columnEnd = colEnd;
-        cutoff = CUTOFF;
+        this.colStart = columnStart;
+        this.colEnd = columnEnd;
+        this.CUTOFF = cutoff;
     }
 
     @Override
