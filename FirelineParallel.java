@@ -5,7 +5,7 @@ public class FirelineParallel {
     private static final int DEFAULT_MAXIMUM_STEPS = 5000;
     private static final double DEFAULT_TOLERANCE = 0.05;
 
-    private static final int CUTOFF = 1000;
+    private static final int CUTOFF = 4000;
 
     public static void main(String[] args) {
 
@@ -70,9 +70,10 @@ public class FirelineParallel {
                 map.prepareNextState();
                 FireTask task = new FireTask( map,mode,1, rows - 1, 1, columns - 1,CUTOFF);
                 
-                pool.execute(task);
-
-                result = task.join();
+                // task.fork();
+// 
+//                 result = task.join();
+                result = pool.invoke(task);
                 
                 map.completeStep();
 
